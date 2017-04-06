@@ -1,0 +1,13 @@
+// Create an app, and everything else is defined based on this.
+var app = angular.module('greatnessApp',[]);
+
+// 'dataController' is the name of this controller. It has to match the name
+// specified in your HTML! We'll get to the exact syntax, but basically this
+// is saying "create a controller called dataController and give it access
+// to the $scope". The $scope is the data that the view has access to.
+app.controller('dataController', ['$scope', function($scope) {
+$scope.region = {
+name: 'Skunkwork, Inc',
+sites: [],
+};
+}]);
